@@ -25,7 +25,7 @@ public class Demo {
         PiezaRedonda rpieza = new PiezaRedonda(30);
         
         if(agujero.encaja(rpieza)){
-            System.out.println("Radio de 5 de la pieza redonda SI encaja en el agujero redondo r5");
+            System.out.println("Radio de 30 de la pieza redonda SI encaja en el agujero redondo r30");
         }
         PiezaCuadrada pequenaPieza = new PiezaCuadrada(2);
         PiezaCuadrada grandePieza = new PiezaCuadrada(20);
@@ -33,10 +33,10 @@ public class Demo {
         PiezaCuadradaAdapter pequenaPiezaAdapter = new PiezaCuadradaAdapter(pequenaPieza);
         PiezaCuadradaAdapter grandePiezaAdapter = new PiezaCuadradaAdapter(grandePieza);
         if(agujero.encaja(pequenaPiezaAdapter)){
-            System.out.println("Ancho 2 de la Pieza Cuadrada  SI encaja en el agujero redondo r5");
+            System.out.println("Ancho 2 de la Pieza Cuadrada  SI encaja en el agujero redondo r30");
         }
         if(!agujero.encaja(grandePiezaAdapter)){
-            System.out.println(" Ancho 20 de la pieza cuadrada  NO encaja dentro de el agujero redondo r5");
+            System.out.println(" Ancho 20 de la pieza cuadrada  NO encaja dentro de el agujero redondo r30");
         }
     }
     
